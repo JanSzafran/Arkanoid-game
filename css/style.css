@@ -1,0 +1,133 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background: black url(starwars.jpg) no-repeat;
+}
+
+.napis {
+  background: url(arkanoid.jpg);
+  width: 1280px;
+  height: 465px;
+  position: relative;
+  top: 5%;
+  left: 15%;
+  transition: transform(-15%, -5%);
+}
+
+
+
+.game {
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    width: 410px;
+    height: 270px;
+    font-size: 0;
+    transform: translate(-50%, -50%);
+    outline: none;
+}
+
+
+.game .arena {
+    position: relative;
+    float: left;
+    clear: left;
+    width: 320px;
+    height: 270px;
+    border: 1px solid #ccc;
+}
+
+.arena {
+      background-image: url(tlo.jpg);
+}
+
+.arena .bricks {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+}
+
+.brick {
+  background-color: #66ffff;
+}
+
+.arena .bricks .brick {
+    width: 28px;
+    height: 10px;
+    margin: 1px;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+.arena .bricks .brick.hide {
+    visibility: hidden;
+}
+
+.arena .paddle {
+    position: absolute;
+    left: 128px;
+    bottom: 25px;
+    width: 62px;
+    height: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: red;
+}
+
+.arena .ball {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #6699ff;
+    border-radius: 50%;
+    background-color: #6699ff;
+}
+
+.game .panel {
+    float: right;
+    clear: right;
+    width: 60px;
+    height: 100%;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    background-color: black;
+}
+
+.game .panel>div {
+    display: inline-flex;
+    margin-top: 10px;
+    color: blue;
+}
+
+.game .panel>div span {
+    display: inline-block;
+    padding-left: 5px;
+    color: blue;
+}
+
+[data-aos="rotate"]
+{
+    transform: rotate(360deg);
+    transition-property: transform;
+}
+
+[data-aos="rotate"].aos-animate
+{
+    transform: rotate(0deg);
+}
+
+[data-score="1"] {
+  background-color: red;
+}
+
+[data-score="3"] {
+  background-color: green;
+}
+
+[data-score="5"] {
+  background-color: blue;
+}
