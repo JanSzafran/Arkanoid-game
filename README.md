@@ -7,7 +7,7 @@ Have fun!
 
 <h1>LIVE</h1>
 
-https://janszafran.github.io/Arkanoid-game/
+http://jszafran.cba.pl/
 
 # Preview
 <div>
